@@ -1,0 +1,206 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f5f5;
+  margin-right: 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+section{
+  background-color: #240046;  
+  width: 100%;   
+}
+
+nav{  
+  width: 100%;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  padding: 0px 5%;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li a{
+  margin: 2rem;
+  font-family: calibri;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.logo{
+  font-family: 'Cutive Mono';
+  color: #240046;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active{
+  font-weight: bold;
+  color: #9acd32;
+}
+
+/********* Customizando o container de Texto *************/
+#container{  
+  margin: 0px;
+  height: 880px;  
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: row;
+}
+/*********** Customizando o Texto ****************/
+.text-container{ 
+  padding: 100px;   
+}
+
+.text-container p:nth-child(1){ 
+ font-family: Calibri; 
+ color: yellowgreen;
+ font-size: 2rem;
+ line-height: 30px;
+}
+
+.text-container p:nth-child(2){ 
+  font-family: 'Cutive Mono';
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.text-container p:nth-child(3){ 
+  font-family: Calibri;
+  color: yellowgreen;
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+/***************** Button *********************/
+.text-container button{
+  width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  outline: none;
+  margin: 20px 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #9acd32;
+  border: none;
+}
+
+.text-container button:hover{
+  background-color: #9acd32;
+  color: #240046;
+  transition: 0.02ms;
+}
+
+button:active{
+  transform: scale(1.1)
+}
+
+/******* Imagem da Section**************/
+.ilustration{
+  padding: 100px;  
+}
+
+.computer{
+  height: 580px;  
+}
+
+/***************Caixa Sobre******************/
+#about{
+  display:flex;   
+  align-items: center;
+  flex-direction: row;
+  margin: -7% auto 20px auto;
+  width: 80%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+  margin-top: -40px;  
+  padding: 20px 0px 20px opx;
+}
+
+.think{
+  width: 20vw;
+  display:flex;
+  padding: 30px;
+}
+
+.texto-sobre {
+  height: 350px;   
+}
+
+.texto-sobre h2{
+  font-size: 3rem;
+  font-family: 'Cutive Mono';
+  color: #240046;
+  margin: 0px; 
+}
+
+.texto-sobre p {
+  margin-top: 20px;
+  color: blue;
+  font-family: calibri;  
+  font-size: 1.2rem;
+}
+
+/******Projetos *********************/
+#projects{
+  margin-top: 100px;
+  height: 800px;
+  background-color: #240046;
+}
+
+#projects h2{
+  font-size: 3rem;
+  font-family: 'Cutive Mono';
+  color: #fff;
+  padding: 50px; 
+  text-align: center;
+}
+
+.projetos-box{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ align-items: center;
+ margin-left:30px; 
+}
+
+
+.project-box1,.project-box2, .project-box3, .project-box4, .project-box5, .project-box6{
+  margin: 10px; 
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 12px rgb(0,0,0, 0.01)	;  
+  text-align: center;
+  padding: 20px;
+  
+  
+}
+
+
