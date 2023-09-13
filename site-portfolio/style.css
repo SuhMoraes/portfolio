@@ -1,204 +1,134 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box
+}
+
+:root {
+  --primary-100: #272343;
+  --primary-200: #788e98;
+  --primary-300: #F0F5F9;
+  --accent-100: #788189;
+  --accent-200: #e1e4e6;
+  --text-100: #1E2022;
+  --text-200: #52616B;
+  --bg-100: #FFFFFF;
+  --bg-200: #E3F6F5;
+  --bg-300: #BAE8E8;
+
 }
 
 body {
-  background-color: #f6f5f5;
-  margin-right: 0px;
-  padding: 0px;
+  background-color: var(--primary-300);
 }
 
-ul {
-  list-style: none;
+header {
+  margin: 2rem 22rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 nav a {
   text-decoration: none;
 }
 
-section{
-  background-color: #240046;  
-  width: 100%;   
-}
-
-nav{  
-  width: 100%;    
-  display: flex;
-  justify-content: space-between;
-  align-items: center;  
-  height: 60px;
-  background-color: #fff;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
-  padding: 0px 5%;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul li a{
-  margin: 2rem;
-  font-family: calibri;
-  font-weight: 700;
-  font-size: 1rem;
-}
-
-.logo{
-  font-family: 'Cutive Mono';
-  color: #240046;
+.logo {
+  color: var(--text-200);
+  font-family: monospace;
   font-size: 2rem;
-  font-weight: bold;
+  font-style: normal;
+  font-weight: 600;
 }
 
-.active{
-  font-weight: bold;
-  color: #9acd32;
+.navigation li {
+  display: inline-block;
+  margin-right: 3rem;
+  padding-top: 0.5rem;
 }
 
-/********* Customizando o container de Texto *************/
-#container{  
-  margin: 0px;
-  height: 880px;  
+.navigation li a {
+  color: var(--primary-100);
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: 400;
   display: flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction: row;
-}
-/*********** Customizando o Texto ****************/
-.text-container{ 
-  padding: 100px;   
+  justify-content: space-around;
+
 }
 
-.text-container p:nth-child(1){ 
- font-family: Calibri; 
- color: yellowgreen;
- font-size: 2rem;
- line-height: 30px;
+li {
+  list-style: none;
 }
 
-.text-container p:nth-child(2){ 
-  font-family: 'Cutive Mono';
-  font-weight: bold;
-  letter-spacing: 5px;
-  color: #fff;
-  font-size: 3rem;
+#line-horizontal {
+  width: 100%;
+  border: 1px solid var(--bg-100);
 }
 
-.text-container p:nth-child(3){ 
-  font-family: Calibri;
-  color: yellowgreen;
+
+section {
+  margin:12rem 22rem;
+}
+
+article {
+  width: 48rem;
+}
+
+h2 {
+  color: var(--primary-100);
+  font-family: monospace;
   font-size: 2rem;
-  line-height: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.2rem;
+  margin-bottom: 2rem;
 }
 
-/***************** Button *********************/
-.text-container button{
-  width: 130px;
-  height: 40px;
-  border-radius: 8px;
-  outline: none;
-  margin: 20px 10px;
-  font-family: calibri;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #9acd32;
-  border: none;
+.sub-text {
+  width: 36.5rem;
 }
 
-.text-container button:hover{
-  background-color: #9acd32;
-  color: #240046;
-  transition: 0.02ms;
-}
-
-button:active{
-  transform: scale(1.1)
-}
-
-/******* Imagem da Section**************/
-.ilustration{
-  padding: 100px;  
-}
-
-.computer{
-  height: 580px;  
-}
-
-/***************Caixa Sobre******************/
-#about{
-  display:flex;   
-  align-items: center;
-  flex-direction: row;
-  margin: -7% auto 20px auto;
-  width: 80%;
-  height: 400px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
-  margin-top: -40px;  
-  padding: 20px 0px 20px opx;
-}
-
-.think{
-  width: 20vw;
-  display:flex;
-  padding: 30px;
-}
-
-.texto-sobre {
-  height: 350px;   
-}
-
-.texto-sobre h2{
-  font-size: 3rem;
-  font-family: 'Cutive Mono';
-  color: #240046;
-  margin: 0px; 
-}
-
-.texto-sobre p {
-  margin-top: 20px;
-  color: blue;
-  font-family: calibri;  
+h3 {
+  color: var(--primary-200);
+  font-family: Courier;
   font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.8rem;
 }
 
-/******Projetos *********************/
-#projects{
-  margin-top: 100px;
-  height: 800px;
-  background-color: #240046;
+.button-cv {  
+  outline: 0;
+  grid-gap: 8px;
+  align-items: center;
+  background-color: var(--bg-300);
+  color: var(--text-100);
+  border: 1px solid var(--primary-100);
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 15px 80px;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all .14s ease-out;
+  white-space: nowrap;
+  margin-top: 3.5rem;
 }
 
-#projects h2{
-  font-size: 3rem;
-  font-family: 'Cutive Mono';
-  color: #fff;
-  padding: 50px; 
-  text-align: center;
+.button-cv:hover {
+  box-shadow: 4px 4px 0 var(--primary-100);
+  transform: translate(-4px,-4px);
 }
 
-.projetos-box{
- display: flex;
- justify-content: space-between;
- flex-wrap: wrap;
- align-items: center;
- margin-left:30px; 
+.button-cv:focus-visible{
+  outline-offset: 1px;
 }
-
-
-.project-box1,.project-box2, .project-box3, .project-box4, .project-box5, .project-box6{
-  margin: 10px; 
-  width: 300px;
-  height: 300px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 2px 2px 12px rgb(0,0,0, 0.01)	;  
-  text-align: center;
-  padding: 22px; 
-}
-
