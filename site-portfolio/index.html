@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css">
+    <title>Suhailah Moraes - Portifolio</title>
+  </head>
 
-  <title>Suhailah Moraes - Portifolio</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <h1 class="logo">
-        <a href="#">&ltSuhailah Moraes/&gt </a>
-      </h1>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">&ltSuhailah Moraes/&gt</h1>
         <ul class="navigation">
           <li><a href="#" class="active">Início</a></li>
           <li><a href="#about">Sobre Mim</a></li>
@@ -27,23 +27,107 @@
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#contact ">Contato</a></li>
         </ul>
-    </nav>
-  </header>
-  <div id="line-horizontal"></div>
+      </nav>
+    </header>
+    <div id="line-horizontal"></div>
 
-  <section>
-    <article>
-      <div>
-        <h2>
-          Busco não apenas desafios e oportunidades, mas sim a chance de transformar ideias em realidade através da tecnologia. 
-        </h2>
+    <section class="container">
+      <article>
+        <div>
+          <h2>
+            Busco não apenas desafios e oportunidades, mas sim a chance de
+            transformar ideias em realidade através da tecnologia.
+          </h2>
+        </div>
+        <div class="sub-text">
+          <h3>
+            Possuo uma bagagem técnica que é uma poderosa caixa de ferramentas:
+            Java, Spring Boot, Docker, Git - uma solução completa.
+          </h3>
+        </div>
+      </article>
+      <button class="button-cv">Meu Botão</button>
+    </section>
+
+    <section class="container-intro">
+      <div class="photo">
+        <img src="/img/octopus.jpg" alt="Octopus no espaço" />
       </div>
-      <div class="sub-text">
-        <h3>
-          Possuo uma bagagem técnica que é uma poderosa caixa de ferramentas: Java, Spring Boot, Docker, Git - uma solução completa.
-        </h3>
-      </div>        
-    </article> 
-    <button class="button-cv">Meu Botão</button>     
-  </section>
-</body>
+      <div class="info">
+        <h3>Hello World, Dev</h3>
+        <h2>Suhailah Moraes</h2>
+        <h4>Java Developer</h4>
+        <p>
+          Sou Suh, Dev Java que curte Spring e microsserviços, sempre explorando
+          o mundo do backend, mas sem deixar o frontend para trás. Gosto de
+          jogar FIFA e não dispenso um bom café, mesmo nos dias mais quentes.
+        </p>
+
+        <div class="icons">
+          <ul>
+            <li><img src="/img/linkedin.png" alt="Linkedin" /></li>
+            <li><img src="/img/linkedin.png" alt="Github" /></li>
+            <li><img src="/img/linkedin.png" alt="Gmail" /></li>
+            <li><img src="/img/linkedin.png" alt="Whatsapp" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container-exp">
+      <div class="container-box">
+        <h2>Experiências</h2>
+        <div class="button-info-exp">
+          <div class="button-info">
+            <button id="btn1">Freelance</button>
+            <button id="btn2">Ci&T</button>
+            <button id="btn3">Escola Conquer</button>
+          </div>
+
+          <div class="info-exp">
+            <div id="info1" style="display: none">
+              <div class="info-exp-working">
+                <h3>Desenvolvedor Java</h3>
+                <p>Agosto/2023 - Atualmente</p>
+              </div>
+              <h4>Freelance</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ullam eius dicta earum hic, modi placeat accusantium cupiditate,
+                incid unt adfuga. Recusandae temporibus cupiditate, mollitia
+                adipisci neque nemo in dolorem.
+              </p>
+            </div>
+            <div id="info2" style="display: none">
+              <div class="info-exp-working">
+                <h3>Desenvolvedor Java</h3>
+                <p>Agosto/2023 - Atualmente</p>
+              </div>
+              <h4>Ci&T</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ullam eius dicta earum hic, modi placeat accusantium cupiditate,
+                incidunt ad fuga. Recusandae temporibus cupiditate, mollitia
+                adipisci neque nemo in dolorem.
+              </p>
+            </div>
+            <div id="info3" style="display: none">
+              <div class="info-exp-working">
+                <h3>Desenvolvedor Java</h3>
+                <p>Agosto/2023 - Atualmente</p>
+              </div>
+              <h4>Escola Conquer</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                ullam eius dicta earum hic, modi placeat accusantium cupiditate,
+                incidunt ad fuga. Recusandae temporibus cupiditate, mollitia
+                adipisci neque nemo in dolorem.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
