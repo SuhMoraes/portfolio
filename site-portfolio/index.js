@@ -1,37 +1,19 @@
-let btn1 = document.getElementById("btn1");
-let btn2 = document.getElementById("btn2");
-let btn3 = document.getElementById("btn3");
-let btn4 = document.getElementById("btn4");
+const buttons = document.querySelectorAll("[data-info-target]");
+const infoElements = document.querySelectorAll(".info-exp > div");
 
-let info1 = document.getElementById("info1");
-let info2 = document.getElementById("info2");
-let info3 = document.getElementById("info3");
-let info4 = document.getElementById("info4");
-
-btn1.addEventListener("click", function() {
-    info1.style.display = "block";
-    info2.style.display = "none";
-    info3.style.display = "none";
-    info4.style.display = "none";
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const targetId = button.getAttribute("data-info-target");
+    infoElements.forEach((infoElement) => {
+      infoElement.style.display =
+        infoElement.id === targetId ? "block" : "none";
+    });
+  });
 });
 
-btn2.addEventListener("click", function() {
-    info1.style.display = "none";
-    info2.style.display = "block";
-    info3.style.display = "none";
-    info4.style.display = "none";
-});
+feather.replace();
 
-btn3.addEventListener("click", function() {
-    info1.style.display = "none";
-    info2.style.display = "none";
-    info3.style.display = "block";
-    info4.style.display = "none";
-});
+AOS.init({
+  duration: 1200,
+})
 
-btn4.addEventListener("click", function() {
-    info1.style.display = "none";
-    info2.style.display = "none";
-    info3.style.display = "none";
-    info4.style.display = "block";
-});

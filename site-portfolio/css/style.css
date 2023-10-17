@@ -1,0 +1,311 @@
+@import url("global.css");
+@import url("header.css");
+@import url("introduction.css");
+@import url("carousel.css");
+
+.container-intro {
+  margin: 12rem 22rem;
+  width: 1216px;
+  height: 533px;
+  display: flex;
+  background-color: var(--bg-200);
+  border: solid 1px var(--accent-200);
+  border-radius: 4px;
+}
+
+.container-intro .photo img {
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 40px 60px 40px 40px;
+}
+
+.container-intro .info {
+  margin: 80px 40px 95px 0;
+}
+
+.container-intro .info h3 {
+  color: var(--text-200);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container-intro .info h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container-intro .info h4 {
+  color: var(--text-100);
+  font-family: monospace;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.container-intro .info p {
+  color: var(--Grey, #bfbfbf);
+  font-family: monospace;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 55px;
+}
+
+.container-intro .icons ul {
+  display: flex;
+  gap: 45px;
+}
+
+.container-intro .icons ul li {
+  list-style: none;
+}
+
+.container-intro .icons ul li a {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  color: #1e2022;
+}
+
+.container-knowledge {
+  margin: 5rem 22rem;
+}
+
+.container-exp {
+  background-color: var(--bg-200);
+  display: flex;
+}
+
+.container-exp .container-box,
+.container-projects {
+  margin: 5rem 22rem;
+  max-height: 524px;
+}
+
+.container-exp h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0 0 60px;
+}
+
+.container-exp .button-info {  
+  width: 280px;
+  height: 300px;
+  background-color: var(--bg-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px;
+  border-radius: 4px;
+  border: solid 1px var(--bg-100);
+}
+
+.container-exp .button-info button {
+  color: var(--text-100);
+  font-family: monospace;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  background-color: transparent;
+  border: none;
+}
+
+.container-exp .button-info-exp {
+  display: flex;
+  gap: 32px;
+}
+
+.container-exp .info-exp {
+  max-width: 904px;
+}
+
+.container-exp .info-exp .info-exp-working {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.container-exp .info-exp h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.container-exp .info-exp p {
+  font-family: Archivo;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-exp .info-exp h4 {
+  color: var(--primary-100);
+  font-family: Archivo;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.container-exp .info-exp span {
+  font-family: Archivo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.container-projects .container-box-projects h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.container-box-projects .cards {
+  display: flex;
+  justify-content: center;
+}
+
+.container-box-projects .cards .card {
+  width: 344px;
+  height: 238px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--primary-100);
+  background: var(--accent-100);
+  margin: 0 32px;
+  padding: 30px;
+}
+
+.container-box-projects .cards .card h3 {
+  color: var(--bg-200);
+  font-family: Archivo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 20px;
+}
+
+.container-box-projects .cards .card p {
+  color: var(--Grey, #bfbfbf);
+  font-family: Archivo;
+  font-size: 18px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+
+.container-box-projects .cards .card a {
+  text-decoration: none;
+  color: var(--text-100);
+}
+
+.container-box-projects .link-projects {
+  text-decoration: none;
+  color: var(--primary-100);
+  font-family: Archivo;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  padding: 48px;
+}
+
+/** blog*/
+.container-blog {
+  background-color: var(--bg-200);
+  padding: 80px 0;
+}
+
+.container-blog .container-box-blog h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+.cards-blog {
+  display: flex;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+/* Estilos para a imagem do card */
+.blog-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para o título do card */
+.blog-card h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+
+/* Estilos para a descrição do card */
+.blog-card p {
+  font-size: 14px;
+  color: #333;
+  margin: 10px;
+}
+
+/* Estilos para o link "Leia mais" */
+.blog-card a {
+  display: block;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+}
+
+footer {
+  padding: 0 50px;
+  background-color: var(--bg-300);
+  width: 1920px;
+  height: 55px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: var(--primary-100);
+  font-family: Archivo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer p a {
+  text-decoration: none;
+  color: var(--primary-100);
+}
