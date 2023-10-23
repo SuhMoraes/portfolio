@@ -53,7 +53,7 @@
 }
 
 .container-intro .info p {
-  color: var(--Grey, #bfbfbf);
+  color: var(--text-200);
   font-family: monospace;
   font-size: 17px;
   font-style: normal;
