@@ -48,3 +48,23 @@ header .header__right .header__image .background {
     z-index: -1;
     width: 100%;
 }
+
+header .header__left .header__stack ul {
+    margin-left: -1rem;
+    margin-bottom: 4rem;
+}
+
+header .header__left .header__stack ul li {
+  display: inline-block;
+  
+}
+
+header .header__left .header__stack ul li img{
+    display: inline-block;
+    padding: 1rem;
+}
+
+header .header__left .header__stack ul li img:hover {
+    transform: scale(1.5);
+    transition: all 0.8s;
+}

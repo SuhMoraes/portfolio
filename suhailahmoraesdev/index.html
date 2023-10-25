@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet" />
-  />
+
   <link rel="stylesheet" href="css/style.css" />
 
 </head>
@@ -25,7 +25,6 @@
       <ul class="navbar__links">
         <li><a href="#header">Início</a></li>
         <li><a href="#about">Sobre</a></li>
-        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#footer">Contato</a></li>
       </ul>
@@ -34,15 +33,23 @@
 
   <header id="header" class="max-width">
     <div class="header__left">
-      <h1>Olá! </br>
+      <h1>Olá!
+        </br>
         Sou Suhailah Moraes Desenvolvedor Fullstack</h1>
       <p>
-        Sou Desenvolvedor fullstack com experiência em desenvolvimento em Java, Springboot
-        na criação de microsserviços, sempre explorando o mundo do
-        backend, porém sem deixar o frontend para trás. <br> Busco não apenas
-        desafios e oportunidades, mas sim, a chance de transformar ideias em
+        Busco não apenas desafios e oportunidades, mas sim, a chance de transformar ideias em
         realidade através da tecnologia.
       </p>
+      <div class="header__stack">
+        <ul>
+          <li><img src="assets/icons8-java.svg" alt="Java"></li>
+          <li><img src="assets/icons8-spring-boot.svg" alt="Spring Boot"></li>
+          <li><img src="assets/icons8-git.svg" alt="Git"></li>
+          <li><img src="assets/icons8-docker.svg" alt="Docker"></li>
+          <li><img src="assets/icons8-amazon-web-services.svg" alt="AWS"></li>
+          <li><img src="assets/icons8-react.svg" alt="Docker"></li>
+        </ul>
+      </div>
       <a href="#about" class="btn btn-primary">Saiba Mais!</a>
     </div>
     <div class="header__right">
@@ -53,14 +60,126 @@
     </div>
   </header>
 
-  <section id="about" class="about max-width">
-    <div class="about__left">
-      <h2 class="secondary-title">Além do código: quem sou eu?</h2>
+  <section class="about__background">
+    <div id="about" class="about max-width">
+      <div class="about__left">
+        <h2 class="secondary-title">Para além do mundo digital: quem está por trás da tela?</h2>
+        <p>
+          Convido você a seguir-me nas redes sociais abaixo para descobrir mais sobre o meu trabalho.
+        </p>
+        <ul>
+          <li>
+            <a href="https://bit.ly/linkedin-suhmoraes" alt="Linkedin" target="_blank">
+              <img src="assets/icons8-linkedin.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="https://bit.ly/github-suhmoraes" alt="Github" target="_blank">
+              <img src="assets/icons8-github.svg">
+            </a>
+          </li>
+          <li>
+            <a href="mailto:suh.alvesmoraes@gmail.com" alt="E-mail">
+              <img src="assets/icons8-gmail.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="about__right">
+        <h3 class="tertiary-title mb-m">
+          Desenvolvedor fullstack apaixonado em solucionar problemas através da tecnologia.
+        </h3>
+        <p>
+          Olá, sou Suhailah Moraes, um apaixonado desenvolvedor fullstack com mais de dois anos de experiência dedicados
+          à
+          criação de aplicações web de alto impacto. Minha trajetória profissional é marcada por contribuições em
+          empresas
+          como <strong> <a href="https://escolaconquer.com.br/" alt="Site Escola Conquer">Escola Conquer</a> </strong> e
+          a inovadora
+          <strong><a href="https://ciandt.com/br/pt-br/home" alt="Site CiandtT"> CI&T</a> </strong>.
+          Atualmente, como freelancer, desbravo um
+          mundo de possibilidades, aproveitando uma ampla gama de tecnologias para criar aplicações sólidas e facilmente
+          expansíveis. Minha missão é transformar conceitos em realidade digital, trazendo inovação e eficiência a cada
+          projeto que abraço.
+        </p>
+        <p>
+          Possuo uma bagagem técnica que é uma poderosa caixa de ferramentas:
+          Java, Spring Boot, Docker, Git, SQL, ReactJS - uma solução completa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects max-width">
+    <div class="projects__content">
+      <h2 class="secondary-title">Projetos em Destaque</h2>
       <p>
-        Que tal se conectar comigo nas redes sociais abaixo e saber mais sobre
-        o meu trabalho?
+        Transformando conceitos abstratos em projetos de sucesso, aqui estão alguns dos meus últimos projetos.
       </p>
-      <ul>
+    </div>
+    <ul>
+      <li>
+        <div class="image">
+          <img src="assets/delivery.png" alt="Foto do Projeto">
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Nome do Projeto
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem vel
+            ullam harum. Rem sint eaque quod modi possimus distinctio cum,
+            eum sed veniam perspiciatis, quas corrupti.
+          </p>
+          <a href="#">Leia mais &rarr;</a>
+        </div>
+      </li>
+      <li class="projects__reversed-list">
+        <div class="image">
+          <img src="assets/delivery.png" alt="Foto do Projeto">
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Nome do Projeto
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem ve.
+          </p>
+          <a href="#">Leia mais &rarr;</a>
+        </div>
+      <li>
+        <div class="image">
+          <img src="assets/delivery.png" alt="Foto do Projeto">
+        </div>
+        <div class="projects__info">
+          <h3 class="tertiary-title">
+            Nome do Projeto
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem vel
+            ullam harum. Rem sint eaque quod modi possimus distinctio cum,
+            eum sed veniam perspiciatis, quas corrupti.
+          </p>
+          <a href="#">Leia mais &rarr;</a>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer__content max-width mb-0">
+      <h2 class="tertiary-title mb-s">
+        Vamos conversar?
+      </h2>
+      <p class="mb-m">
+        Ficarei feliz em saber mais sobre seus projetos e como podemos trabalhar juntos para torná-los realidade.
+      </p>
+   
+      <div class="footer__contact mb-m">
+        <span class="mb-m">suh.alvesmoraes@gmail.com</span>
+    
+      <ul class="mb-1">
         <li>
           <a href="https://bit.ly/linkedin-suhmoraes" alt="Linkedin" target="_blank">
             <img src="assets/icons8-linkedin.svg" alt="">
@@ -78,21 +197,11 @@
         </li>
       </ul>
     </div>
-    <div class="about__right">
-      <h3 class="tertiary-title mb-m">
-        Desenvolvedor fullstack que gosta de resolver problemas através da tecnologia.
-      </h3>
-      <p>
-        Olá, sou Suhailah Moraes, desenvolvedor fullstack que gosta de solucionar problemas através da tecnologia.
-        Com mais de 2 anos de experiência em aplicações web, seja no backend ou frontend. Tenho atuado com diversas
-        tecnologias, criando aplicações robustas e escaláveis.
-      </p>
-      <p>
-        Possuo uma bagagem técnica que é uma poderosa caixa de ferramentas:
-        Java, Spring Boot, Docker, Git, SQL, ReactJS - uma solução completa.
-      </p>
-    </div>
-  </section>
+    <p class="footer__copyright">
+      © 2023 Suhailah Moraes. Todos os direitos reservados.
+    </p>
+  </div>
+  </footer>
   <script src="scripts/index.js"></script>
 </body>
 
