@@ -49,6 +49,7 @@
     .projects ul li,
     .projects ul li.projects__reversed-list {
       flex-direction: column;
+      padding: 2rem;
     }
   
     .projects ul li .projects__info {
