@@ -5,9 +5,9 @@
 .about {
     display: flex;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 6rem ;
     scroll-margin-top: 20rem;
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .about .about__left {

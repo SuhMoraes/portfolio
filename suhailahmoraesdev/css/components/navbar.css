@@ -13,6 +13,9 @@
     display: flex;
     justify-content: space-between;
 }
+.navbar .navbar__content img {
+  max-width: 5rem;
+}
 
 .navbar .navbar__content .navbar__links li {
     display: inline-block;
@@ -38,6 +41,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar .navbar__content img {
+    max-width: 5rem;
+  }
+
   .navbar .navbar__content .navbar__links {
     display: none;
   }
