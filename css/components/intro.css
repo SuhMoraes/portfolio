@@ -97,6 +97,11 @@ section .intro__left .intro__stack ul li img:hover {
     }
 
     section .intro__right .intro__image img {
-        display: none;
+       width: 200px;
+    }
+
+    .intro__contact {
+        max-width: 90%;
+        margin: 2rem;
     }
   }
