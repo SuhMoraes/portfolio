@@ -1,28 +1,52 @@
+nav {
+  max-height: 80px;
+  position: fixed;  
+  z-index:1 ;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.nav-container {
+  max-width: 1440px;
+}
+
+.max-width-navigation {
+  margin: 0 auto;
+  width: 100%;
+}
+
 
 .navbar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: var(--white);
+    background-color: var(--light-tertiary-color);
 }
 
 .navbar .navbar__content {
-    padding: 3rem 4rem 1rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;    
+    max-width: 1440px;
 }
-.navbar .navbar__content img {
+.navbar .navbar__content .icon-logo {
   max-width: 5rem;
+}
+
+.navbar .navbar__content .navbar__links{
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar__content .navbar__links li {
     display: inline-block;
 }
 
+
 .navbar .navbar__content .navbar__links li:not(:last-of-type) {
-    margin-right: 2rem;;
+    margin-right: 2rem;
 }
 
 .navbar .navbar__content .navbar__links a {
@@ -30,6 +54,11 @@
     padding: 1rem;
     font-weight: 600;
 }
+
+img .whats-icon {
+  max-width: 1rem !important;
+}
+
 
 .navbar .navbar__content .navbar__links a:hover {
     color: var(--tertiary-color);

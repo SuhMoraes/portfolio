@@ -1,28 +1,46 @@
-header {
+section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
-    scroll-margin-top: 20rem;
+    scroll-margin-top: 20rem; 
 }
 
-header .header__left {
+.intro-max-width {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 160px;
+    margin-bottom: 10rem;
+  }
+
+ .heading-home {
+  padding-top: 9rem;
+ }
+
+section .intro__left {
     max-width: 62rem;
     flex: 1;
 }
 
-header .header__left p {
+section .intro__left p {
     margin-top: 2rem;
     margin-bottom: 4rem;
     max-width: 50rem;
 }
 
-header .header__right .header__image {
+section .intro__right .intro__image {
     position: relative;
     line-height: 0;
 }
 
-header .header__right .header__image::after {
+.intro__contact{
+  max-width: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .intro__right .intro__image::after {
     content: '';
     display: block;
     width: 100%;
@@ -35,13 +53,13 @@ header .header__right .header__image::after {
     z-index: -1;    
 }
 
-header .header__right .header__image .suhailah {
+section .intro__right .intro__image .suhailah {
     border-radius: 0.5rem;
     min-width: 25rem;
     max-width: 100%;
 }
 
-header .header__right .header__image .background {
+section .intro__right .intro__image .background {
     position: absolute;
     top: -4rem;
     right: -2.5rem;
@@ -49,37 +67,36 @@ header .header__right .header__image .background {
     width: 100%;
 }
 
-header .header__left .header__stack ul {
+section .intro__left .intro__stack ul {
     margin-left: -1rem;
     margin-bottom: 4rem;
 }
 
-header .header__left .header__stack ul li {
+section .intro__left .intro__stack ul li {
   display: inline-block;
   
 }
 
-header .header__left .header__stack ul li img{
+section .intro__left .intro__stack ul li img{
     display: inline-block;
     padding: 1rem;
 }
 
-header .header__left .header__stack ul li img:hover {
+section .intro__left .intro__stack ul li img:hover {
     transform: scale(1.5);
     transition: all 0.8s;
 }
-
 @media only screen and (max-width: 768px) {
-    header {
+    section {
       flex-direction: column-reverse;
       text-align: center;
     }
   
-    header .header__left p {
+    section .intro__left p {
       margin: 2rem auto 4rem;
     }
 
-    header .header__right .header__image img {
+    section .intro__right .intro__image img {
         display: none;
     }
   }

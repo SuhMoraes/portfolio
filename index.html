@@ -18,32 +18,38 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="navbar__content max-width mb-0">
-      <a href="/">
-       <img src="assets/dev.png" alt="icon">
+  <header >
+    <nav class="navbar ">
+      <div class="navbar__content mb-0 max-width-navigation">
+      <a href="#Home">
+        <img  class="icon-logo" src="assets/dev.png" alt="icon">
       </a>
-      <ul class="navbar__links">
-        <li><a href="#header">Início</a></li>
-        <li><a href="#about">Sobre</a></li>
-        <li><a href="#projects">Projetos</a></li>
-        <li><a href="#footer">Contato</a></li>
-      </ul>
-      <div class="navbar__mobile">
-        <img src="assets/icons8-menu.svg" alt="menu" class="burguer" />
-        <ul class="mobile__links">
-          <li><a href="#header">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#footer">Contato</a></li>
+        
+        <ul class="navbar__links">
+          <li><a href="#Home">Início</a></li>          
+          <li><a href="#About">Sobre</a></li>
+          <li><a href="#Projects">Projetos</a></li>
+          <li><a href="#Contact">Contato</a></li>
+          <li ><a href="https://wa.me/+5543988695735" target="_blank"><img class="whats-icon" src="assets/icons8-whatsapp-30.png" alt=""></a></li>
         </ul>
+        <div class="navbar__mobile">
+          <img src="assets/icons8-menu.svg" alt="menu" class="burguer" />
+          <ul class="mobile__links">
+            <li><a href="#Home">Início</a></li>            
+            <li><a href="#About">Sobre</a></li>
+            <li><a href="#Projects">Projetos</a></li>
+            <li><a href="#Contact">Contato</a></li>
+            <li><a href="https://wa.me/+5543988695735"  target="_blank"><img src="assets/icons8-whatsapp-48.png" alt=""></a></li>
+          </ul>
+        </div>
       </div>
+    </nav>
+    
+    </header>
+  </header>
 
-    </div>
-  </nav>
-
-  <header id="header" class="max-width">
-    <div class="header__left">
+  <section id="Home" class=" heading-home intro-max-width">
+    <div class="intro__left">
       <h1>Olá!
         </br>
         Sou Suhailah Moraes Desenvolvedor Fullstack</h1>
@@ -51,7 +57,7 @@
         Busco não apenas desafios e oportunidades, mas sim, a chance de transformar ideias em
         realidade através da tecnologia.
       </p>
-      <div class="header__stack">
+      <div class="intro__stack">
         <ul>
           <li><img src="assets/icons8-java.svg" alt="Java"></li>
           <li><img src="assets/icons8-spring-boot.svg" alt="Spring Boot"></li>
@@ -61,155 +67,167 @@
           <li><img src="assets/icons8-react.svg" alt="Docker"></li>
         </ul>
       </div>
-      <a href="#about" class="btn btn-primary">Saiba Mais!</a>
+      <div class="intro__contact">        
+        <a href="/assets/cv/Suhailah Moraes - Java Developer.pdf"  target="_blank" download class="btn btn-primary download-btn">Download CV</a>
+        <a href="#Contact"  class="btn btn-white ">Contato</a>
+      </div>
     </div>
-    <div class="header__right">
-      <div class="header__image">
+    <div class="intro__right">
+      <div class="intro__image">
         <img src="https://avatars.githubusercontent.com/u/68478385?v=4" alt="Suhailah Moraes" class="suhailah" />
         <img src="assets/abstract.svg" alt="background" class="background" />
       </div>
     </div>
-  </header>
+  </section>
 
-  <section class="about__background">
-    <div id="about" class="about max-width">
-      <div class="about__left">
-        <h2 class="secondary-title">Para além do mundo digital: quem está por trás da tela?</h2>
-        <p>
-          Convido você a seguir-me nas redes sociais abaixo para descobrir mais sobre o meu trabalho.
-        </p>
-        <ul>
-          <li>
-            <a href="https://bit.ly/linkedin-suhmoraes" alt="Linkedin" target="_blank">
-              <img src="assets/icons8-linkedin.svg" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="https://bit.ly/github-suhmoraes" alt="Github" target="_blank">
-              <img src="assets/icons8-github.svg">
-            </a>
-          </li>
-          <li>
-            <a href="mailto:suh.alvesmoraes@gmail.com" alt="E-mail">
-              <img src="assets/icons8-gmail.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>      
-      <div class="about__right">
-        <h3 class="tertiary-title mb-m">
-          Desenvolvedor fullstack apaixonado em solucionar problemas através da tecnologia.
-        </h3>
-        <p>
-          Olá, sou Suhailah Moraes, um apaixonado desenvolvedor fullstack com mais de dois anos de experiência dedicados
-          à
-          criação de aplicações web de alto impacto. Minha trajetória profissional é marcada por contribuições em
-          empresas
-          como <strong> <a href="https://escolaconquer.com.br/" alt="Site Escola Conquer">Escola Conquer</a> </strong> e
-          a inovadora
-          <strong><a href="https://ciandt.com/br/pt-br/home" alt="Site CiandtT"> CI&T</a> </strong>.
-          Atualmente, como freelancer, desbravo um
-          mundo de possibilidades, aproveitando uma ampla gama de tecnologias para criar aplicações sólidas e facilmente
-          expansíveis. Minha missão é transformar conceitos em realidade digital, trazendo inovação e eficiência a cada
-          projeto que abraço.
-        </p>
-        <p>
-          Possuo uma bagagem técnica que é uma poderosa caixa de ferramentas:
-          Java, Spring Boot, Docker, Git, SQL, ReactJS - uma solução completa.
-        </p>
+  
+  <section id="About" class="about ">
+    <p class="heading-p">Conheça mais</p>
+    <h1 class="heading">Sobre mim</h1>
+    <div class="container about-container">
+        <div class="basic-edu">
+            <div class="edu-box">
+                <span>
+                    <img class="icon" src="assets/icons8-garantia-50.png" alt="" srcset="">
+                    <h4>Experiência</h4>
+            </span>
+                <p>
+                    3+ anos <br>
+                    Desenvolvedor fullstack
+                </p>
+            </div>
+            
+            <div class="edu-box">
+                <img class="icon" src="assets/icons8-diploma-64.png" alt="" srcset="">
+                <h4>Formação</h4>
+                <p>
+                   Análise e Desenvolvimento de Sistemas<br>
+                   Unopar
+                </p>
+            </div>    
+        </div>  
+        <div class="about-text">                
+            <p>
+              Olá, sou Suhailah Moraes, um desenvolvedor fullstack apaixonado desde 2021, especializado em criar aplicações web de alto impacto. Minha trajetória inclui colaborações valiosas em empresas inovadoras como Escola Conquer e CI&T. Atualmente, como freelancer, exploro um vasto leque de tecnologias para desenvolver soluções robustas e escaláveis. Minha missão é transformar ideias em realidade digital, trazendo inovação e eficiência a cada projeto que realizo.
+              <br>
+              Atuando como Desenvolvedor OutSystems na Tata Consultancy Services em projetos de uma renomada empresa petrolífera, destaco-me por minhas habilidades em React, OutSystems e BDD. Minha colaboração ativa resulta em soluções inovadoras e de alta qualidade, beneficiando milhares de usuários com eficiência e usabilidade excepcionais.
+              <br>
+              Minha bagagem técnica é uma poderosa caixa de ferramentas: Java, Spring Boot, Docker, Git, SQL, ReactJS, OutSystems - uma solução completa e versátil. 
+              <br>
+              Estou sempre em busca de novos desafios onde posso aplicar minhas habilidades e contribuir para o sucesso de projetos inovadores.
+            </p>    
+        </div>
+    </div>
+</section>
+
+
+  <section id="Projects" class="projects max-width">
+    <p class="heading-p">Veja os meu recentes</p>
+    <h1 class="heading">Projetos</h1>
+    <div class="container">
+      <div class="card">
+          <img src="https://via.placeholder.com/300x200" alt="Project Image">
+          <div class="card-content">
+              <h4 class="card-title">Project Title 1</h4>
+              <div class="card-links">
+                  <a class="btn btn-primary" href="#"  target="_blank">Link 1</a>
+                  <a class="btn btn-white" href="#"  target="_blank">Link 2</a>
+              </div>
+              <div class="card-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>Java</span>
+                  <span>Python</span>
+                  <span>AWS</span>
+                  <span>Docker</span>
+                  <span>Git</span>
+              </div>
+          </div>
       </div>
-    </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Project Image">
+        <div class="card-content">
+            <h4 class="card-title">Project Title 1</h4>
+            <div class="card-links">
+                <a class="btn btn-primary" href="#"  target="_blank">Link 1</a>
+                <a class="btn btn-white" href="#"  target="_blank">Link 2</a>
+            </div>
+            <div class="card-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Java</span>
+                <span>Python</span>
+                <span>AWS</span>
+                <span>Docker</span>
+                <span>Git</span>
+            </div>
+        </div>
+        </div><div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Project Image">
+      <div class="card-content">
+          <h4 class="card-title">Project Title 1</h4>
+          <div class="card-links">
+              <a class="btn btn-primary" href="#"  target="_blank">Link 1</a>
+              <a class="btn btn-white" href="#"  target="_blank">Link 2</a>
+          </div>
+          <div class="card-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Java</span>
+              <span>Python</span>
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>Git</span>
+          </div>
+      </div>
+  </div>
+  </div>
+
   </section>
 
-  <section id="projects" class="projects max-width">
-    <div class="projects__content">
-      <h2 class="secondary-title">Projetos em Destaque</h2>
-      <p>
-        Transformando conceitos abstratos em projetos de sucesso, aqui estão alguns dos meus últimos projetos.
-      </p>
-    </div>
-    <ul>
-      <li>
-        <div class="image">
-          <img src="assets/delivery.png" alt="Foto do Projeto">
-        </div>
-        <div class="projects__info">
-          <h3 class="tertiary-title">
-            Nome do Projeto
-          </h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem vel
-            ullam harum. Rem sint eaque quod modi possimus distinctio cum,
-            eum sed veniam perspiciatis, quas corrupti.
-          </p>
-          <a href="#">Leia mais &rarr;</a>
-        </div>
-      </li>
-      <li class="projects__reversed-list">
-        <div class="image">
-          <img src="assets/delivery.png" alt="Foto do Projeto">
-        </div>
-        <div class="projects__info">
-          <h3 class="tertiary-title">
-            Nome do Projeto
-          </h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem ve.
-          </p>
-          <a href="#">Leia mais &rarr;</a>
-        </div>
-      <li>
-        <div class="image">
-          <img src="assets/delivery.png" alt="Foto do Projeto">
-        </div>
-        <div class="projects__info">
-          <h3 class="tertiary-title">
-            Nome do Projeto
-          </h3>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus omnis, obcaecati corrupti autem vel
-            ullam harum. Rem sint eaque quod modi possimus distinctio cum,
-            eum sed veniam perspiciatis, quas corrupti.
-          </p>
-          <a href="#">Leia mais &rarr;</a>
-        </div>
-      </li>
-    </ul>
-    </div>
-  </section>
-
-  <footer id="footer">
+  <footer id="Contact">
     <div class="footer__content max-width mb-0">
-      <h2 class="tertiary-title mb-s">
+      <h4 class="mb-s">
         Vamos conversar?
-      </h2>
+      </h4>
       <p class="mb-m">
         Ficarei feliz em saber mais sobre seus projetos e como podemos trabalhar juntos para torná-los realidade.
       </p>
    
       <div class="footer__contact mb-m">
-        <span class="mb-m">suh.alvesmoraes@gmail.com</span>
+       <p> <span class="mb-m">suh.alvesmoraes@gmail.com</span></p>
     
       <ul class="mb-1">
         <li>
-          <a href="https://bit.ly/linkedin-suhmoraes" alt="Linkedin" target="_blank">
+          <a href="https://bit.ly/linkedin-suhmoraes"    target="_blank"alt="Linkedin" target="_blank">
             <img src="assets/icons8-linkedin.svg" alt="">
           </a>
         </li>
         <li>
-          <a href="https://bit.ly/github-suhmoraes" alt="Github" target="_blank">
+          <a href="mailto:suh.alvesmoraes@gmail.com  target="_blank"" alt="E-mail">
+            <a href="https://bit.ly/github-suhmoraes"  alt="Github" target="_blank">
             <img src="assets/icons8-github.svg">
           </a>
         </li>
         <li>
-          <a href="mailto:suh.alvesmoraes@gmail.com" alt="E-mail">
+          <a href="mailto:suh.alvesmoraes@gmail.com  target="_blank"" alt="E-mail">
+            <a href="mailto:suh.alvesmoraes@gmail.com "  alt="E-mail">
             <img src="assets/icons8-gmail.svg" alt="">
           </a>
         </li>
       </ul>
     </div>
-    <p class="footer__copyright">
-      © 2023 Suhailah Moraes. Todos os direitos reservados.
+    <p class="heading">
+      © 2024 Suhailah Moraes. Todos os direitos reservados.
     </p>
   </div>
   </footer>
