@@ -13,7 +13,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .logo h1{
@@ -41,7 +41,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 100%;    
-    max-width: 1440px;
+    max-width: 130rem;
 }
 .navbar .navbar__content .icon-logo {
   max-width: 5rem;
