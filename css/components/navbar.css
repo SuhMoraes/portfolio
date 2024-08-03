@@ -19,6 +19,11 @@ nav {
 .logo h1{
   font-size: 3rem;
   padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.logo h1:hover{
+  color: var(--tertiary-color);
 }
 
 .nav-container {

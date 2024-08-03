@@ -11,6 +11,7 @@ section {
     font-family: monospace ;
 }
 
+
 .intro-name{    
     font-weight: 600;    
     font-family: monospace ;
@@ -20,7 +21,7 @@ section {
     max-width: 120rem;
     margin: 0 auto;
     width: 100%;
-    margin-top: 160px;
+    margin-top: 8rem;
     margin-bottom: 10rem;
   }
 
