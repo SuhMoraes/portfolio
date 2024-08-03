@@ -6,6 +6,16 @@ section {
     scroll-margin-top: 20rem; 
 }
 
+.intro-h1 {
+    font-weight: 400;    
+    font-family: monospace ;
+}
+
+.intro-name{    
+    font-weight: 600;    
+    font-family: monospace ;
+}
+
 .intro-max-width {
     max-width: 120rem;
     margin: 0 auto;
@@ -91,9 +101,13 @@ section .intro__left .intro__stack ul li img:hover {
       flex-direction: column-reverse;
       text-align: center;
     }
+
+    section .intro-h1 {
+        margin: 2rem 2rem 4rem; 
+    }
   
     section .intro__left p {
-      margin: 2rem auto 4rem;
+        margin: 2rem 2rem 4rem;    
     }
 
     section .intro__right .intro__image img {
